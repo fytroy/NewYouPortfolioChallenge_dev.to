@@ -43,8 +43,16 @@
                 <span class="greeting">Hello, I'm</span>
                 <h1 class="name">Rodney <br> <span class="outline-text">Gitonga</span></h1>
                 <p class="description">Engineer. Analyst. Builder.</p>
-                <div class="cta-buttons">
-                    <a href="#projects" class="btn primary">See My Work</a>
+                <div class="hero-cta fade-in-section">
+                    <a href="#projects" class="btn btn-primary">See My Work</a>
+                    <div class="hero-socials">
+                        <a href="https://github.com/fytroy" target="_blank" aria-label="GitHub"><i
+                                class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/rodney-gitonga-306460183" target="_blank"
+                            aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="mailto:rodneyroygitonga@gmail.com" aria-label="Email"><i
+                                class="fas fa-envelope"></i></a>
+                    </div>
                 </div>
             </div>
             <div class="hero-visual">
@@ -340,9 +348,9 @@
                         <h3>Analytics & BI</h3>
                         <div class="skill-tags">
                             <span>Power BI (DAX)</span>
-                            <span>Financial Analysis</span>
-                            <span>Data Modeling</span>
-                            <span>Data Storytelling</span>
+                            <span>Tableau</span>
+                            <span>Looker Studio</span>
+                            <span>Financial Modeling</span>
                             <span>Excel (Advanced)</span>
                         </div>
                     </div>
@@ -350,20 +358,21 @@
                     <div class="skill-category glass">
                         <h3>Databases & Warehousing</h3>
                         <div class="skill-tags">
-                            <span>SQL (Optimization)</span>
-                            <span>MySQL & MongoDB</span>
-                            <span>Data Engineering</span>
-                            <span>Data Validation</span>
+                            <span>SQL (Window Funcs)</span>
+                            <span>Snowflake</span>
+                            <span>PostgreSQL</span>
+                            <span>Orchestration (Airflow)</span>
+                            <span>Data Modeling</span>
                         </div>
                     </div>
                     <!-- Programming -->
                     <div class="skill-category glass">
                         <h3>Programming & Automation</h3>
                         <div class="skill-tags">
-                            <span>Python (Pandas)</span>
-                            <span>JavaScript</span>
+                            <span>Python (Pandas/NumPy)</span>
+                            <span>Scikit-Learn</span>
+                            <span>Automated Reporting</span>
                             <span>REST APIs</span>
-                            <span>Power Apps</span>
                         </div>
                     </div>
                     <!-- Cloud & DevOps -->
@@ -371,9 +380,9 @@
                         <h3>Cloud & DevOps</h3>
                         <div class="skill-tags">
                             <span>Oracle Cloud (OCI)</span>
-                            <span>AWS</span>
+                            <span>AWS (S3/Lambda)</span>
                             <span>Docker</span>
-                            <span>Git</span>
+                            <span>CI/CD for Data</span>
                         </div>
                     </div>
                     <!-- IT Systems -->
@@ -382,18 +391,18 @@
                         <div class="skill-tags">
                             <span>Windows Server</span>
                             <span>Active Directory</span>
-                            <span>Network (TCP/IP)</span>
-                            <span>ITIL & Security</span>
+                            <span>Network Security</span>
+                            <span>ITIL Framework</span>
                         </div>
                     </div>
                     <!-- Soft Skills -->
                     <div class="skill-category glass">
                         <h3>Soft Skills</h3>
                         <div class="skill-tags">
-                            <span>Communication</span>
+                            <span>Stakeholder Mgmt</span>
                             <span>Problem Solving</span>
-                            <span>Collaboration</span>
-                            <span>Adaptability</span>
+                            <span>Data Storytelling</span>
+                            <span>Agile Methodology</span>
                         </div>
                     </div>
                 </div>
@@ -406,194 +415,116 @@
                 <span class="section-subtitle">Portfolio</span>
                 <h2 class="section-title">Selected <span class="gradient-text">Works</span></h2>
             </div>
-            <div class="projects-grid expanded-grid">
+            <div class="projects-grid">
                 <!-- 1. AI Banking Analyst -->
                 <div class="project-card glass">
+                    <div class="project-image">
+                        <!-- No image in repo, keeping generic placeholder or could use a relevant stock image -->
+                        <img src="https://placehold.co/600x400/1e293b/475569?text=AI+Banking+Analyst"
+                            alt="AI Banking Interface">
+                    </div>
                     <div class="project-content">
                         <div class="project-header">
                             <h3>AI Banking Analyst</h3>
                             <span class="project-type">AI / FinTech</span>
                         </div>
-                        <p class="project-desc">NLP-to-SQL interface for non-technical staff to query banking DBs.</p>
+                        <p class="project-desc">NLP-to-SQL interface allowing non-technical staff to query banking
+                            databases using natural language.</p>
                         <div class="tech-stack"><span>Python</span><span>OpenAI</span><span>PostgreSQL</span></div>
                         <a href="https://github.com/fytroy/AIBankingAnalyst.TexttoSQL0.1" target="_blank"
                             class="btn-link">View Code</a>
                     </div>
                 </div>
-                <!-- 2. Containerized Data Lake -->
+
+                <!-- 2. Financial Analysis Dashboard -->
                 <div class="project-card glass">
-                    <div class="project-content">
-                        <div class="project-header">
-                            <h3>Data Lake Docker</h3>
-                            <span class="project-type">Infrastructure</span>
-                        </div>
-                        <p class="project-desc">Microservices-based data lake architecture for scalable ingestion.</p>
-                        <div class="tech-stack"><span>Docker</span><span>Hadoop</span><span>Spark</span></div>
-                        <a href="https://github.com/fytroy/ContainerizedDataLake.docker" target="_blank"
-                            class="btn-link">View Code</a>
+                    <div class="project-image">
+                        <img src="https://raw.githubusercontent.com/fytroy/FinancialAnalysisProject.mavenanalytics.io_data_drills/main/solution.png"
+                            alt="Financial Dashboard">
                     </div>
-                </div>
-                <!-- 3. Financial Analysis BI -->
-                <div class="project-card glass">
                     <div class="project-content">
                         <div class="project-header">
-                            <h3>Financial BI</h3>
+                            <h3>Financial BI Suite</h3>
                             <span class="project-type">Analytics</span>
                         </div>
-                        <p class="project-desc">Interactive dashboards for real-time financial health monitoring.</p>
-                        <div class="tech-stack"><span>PowerBI</span><span>DAX</span><span>Python</span></div>
+                        <p class="project-desc">Interactive Power BI dashboards for real-time financial health
+                            monitoring, drill-down analysis, and forecasting.</p>
+                        <div class="tech-stack"><span>PowerBI</span><span>DAX</span><span>SQL</span></div>
                         <a href="https://github.com/fytroy/FinancialAnalysisProject.mavenanalytics.io_data_drills"
                             target="_blank" class="btn-link">View Code</a>
                     </div>
                 </div>
-                <!-- 4. RenderKeeper -->
+
+                <!-- 3. Traffic Flow Simulation -->
                 <div class="project-card glass">
+                    <div class="project-image">
+                        <img src="https://raw.githubusercontent.com/fytroy/TrafficController.docker/main/1.png"
+                            alt="Traffic Simulation">
+                    </div>
                     <div class="project-content">
                         <div class="project-header">
-                            <h3>RenderKeeper</h3>
-                            <span class="project-type">Tooling</span>
+                            <h3>TrafficController</h3>
+                            <span class="project-type">Simulation / Data</span>
                         </div>
-                        <p class="project-desc">Automated rendering pipeline manager for 3D artists.</p>
-                        <div class="tech-stack"><span>Python</span><span>Blender API</span><span>PyQt</span></div>
-                        <a href="https://github.com/fytroy/RenderKeeper" target="_blank" class="btn-link">View Code</a>
+                        <p class="project-desc">Urban traffic flow control system using real-time data simulation to
+                            optimize signal timings.</p>
+                        <div class="tech-stack"><span>Python</span><span>NumPy</span><span>Matplotlib</span></div>
+                        <a href="https://github.com/fytroy/TrafficController.docker" target="_blank"
+                            class="btn-link">View Code</a>
                     </div>
                 </div>
-                <!-- 5. DockerChat -->
+
+                <!-- 4. Automated Data Explorer -->
                 <div class="project-card glass">
+                    <div class="project-image">
+                        <img src="https://raw.githubusercontent.com/fytroy/DataExplorer.py/main/Age_histogram.png"
+                            alt="Data Explorer">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>AutoEDA Explorer</h3>
+                            <span class="project-type">Data Science</span>
+                        </div>
+                        <p class="project-desc">Streamlit app that generates automated Exploratory Data Analysis reports
+                            from any CSV upload.</p>
+                        <div class="tech-stack"><span>Pandas</span><span>Streamlit</span><span>Seaborn</span></div>
+                        <a href="https://github.com/fytroy/DataExplorer.py" target="_blank" class="btn-link">View
+                            Code</a>
+                    </div>
+                </div>
+
+                <!-- 5. DockerChat (Replaces Data Lake - Has Image) -->
+                <div class="project-card glass">
+                    <div class="project-image">
+                        <img src="https://raw.githubusercontent.com/fytroy/DockerChat/main/1.png"
+                            alt="Real time chat app">
+                    </div>
                     <div class="project-content">
                         <div class="project-header">
                             <h3>DockerChat</h3>
                             <span class="project-type">Web App</span>
                         </div>
-                        <p class="project-desc">Real-time chat application containerized for easy deployment.</p>
+                        <p class="project-desc">Real-time chat application containerized for easy deployment, featuring
+                            multiple rooms and direct messaging.</p>
                         <div class="tech-stack"><span>Node.js</span><span>Socket.io</span><span>Docker</span></div>
                         <a href="https://github.com/fytroy/DockerChat" target="_blank" class="btn-link">View Code</a>
                     </div>
                 </div>
-                <!-- 6. TrafficController -->
+
+                <!-- 6. Snake Game (Replaces DevOps - Has Image) -->
                 <div class="project-card glass">
-                    <div class="project-content">
-                        <div class="project-header">
-                            <h3>TrafficController</h3>
-                            <span class="project-type">System</span>
-                        </div>
-                        <p class="project-desc">Simulation of urban traffic flow control systems.</p>
-                        <div class="tech-stack"><span>Python</span><span>Simulation</span><span>Docker</span></div>
-                        <a href="https://github.com/fytroy/TrafficController.docker" target="_blank"
-                            class="btn-link">View Code</a>
+                    <div class="project-image">
+                        <img src="https://raw.githubusercontent.com/fytroy/snake.game/main/1.png" alt="Snake Game">
                     </div>
-                </div>
-                <!-- 7. React Todo List -->
-                <div class="project-card glass">
-                    <div class="project-content">
-                        <div class="project-header">
-                            <h3>Task Master</h3>
-                            <span class="project-type">Frontend</span>
-                        </div>
-                        <p class="project-desc">Clean, state-managed todo application with local storage.</p>
-                        <div class="tech-stack"><span>React</span><span>Redux</span><span>CSS</span></div>
-                        <a href="https://github.com/fytroy/ReactTodoList" target="_blank" class="btn-link">View Code</a>
-                    </div>
-                </div>
-                <!-- 8. ResourceMonitor -->
-                <div class="project-card glass">
-                    <div class="project-content">
-                        <div class="project-header">
-                            <h3>ResMonitor</h3>
-                            <span class="project-type">SysAdmin</span>
-                        </div>
-                        <p class="project-desc">Microservice for tracking server CPU/RAM usage logs.</p>
-                        <div class="tech-stack"><span>C#</span><span>.NET</span><span>PowerShell</span></div>
-                        <a href="https://github.com/fytroy/ResourceMonitor.ms" target="_blank" class="btn-link">View
-                            Code</a>
-                    </div>
-                </div>
-                <!-- 9. DevOps Bootstrapper -->
-                <div class="project-card glass">
-                    <div class="project-content">
-                        <div class="project-header">
-                            <h3>DevOps Init</h3>
-                            <span class="project-type">DevOps</span>
-                        </div>
-                        <p class="project-desc">Automated environment setup script for new servers.</p>
-                        <div class="tech-stack"><span>Bash</span><span>Ansible</span><span>Linux</span></div>
-                        <a href="https://github.com/fytroy/DevOpsBootstrapper.mssvr" target="_blank"
-                            class="btn-link">View Code</a>
-                    </div>
-                </div>
-                <!-- 10. YT Downloader -->
-                <div class="project-card glass">
-                    <div class="project-content">
-                        <div class="project-header">
-                            <h3>YT Downloader</h3>
-                            <span class="project-type">Utility</span>
-                        </div>
-                        <p class="project-desc">CLI tool for batch downloading video content.</p>
-                        <div class="tech-stack"><span>Python</span><span>FFmpeg</span><span>CLI</span></div>
-                        <a href="https://github.com/fytroy/YtDownloader.py" target="_blank" class="btn-link">View
-                            Code</a>
-                    </div>
-                </div>
-                <!-- 11. Data Explorer -->
-                <div class="project-card glass">
-                    <div class="project-content">
-                        <div class="project-header">
-                            <h3>Data Explorer</h3>
-                            <span class="project-type">Data Science</span>
-                        </div>
-                        <p class="project-desc">Automated EDA (Exploratory Data Analysis) generator.</p>
-                        <div class="tech-stack"><span>Pandas</span><span>Seaborn</span><span>Jupyter</span></div>
-                        <a href="https://github.com/fytroy/DataExplorer.py" target="_blank" class="btn-link">View
-                            Code</a>
-                    </div>
-                </div>
-                <!-- 12. Starfield -->
-                <div class="project-card glass">
-                    <div class="project-content">
-                        <div class="project-header">
-                            <h3>Starfield</h3>
-                            <span class="project-type">Creative Coding</span>
-                        </div>
-                        <p class="project-desc">Interactive HTML5 Canvas particle simulation.</p>
-                        <div class="tech-stack"><span>JS</span><span>Canvas</span><span>Math</span></div>
-                        <a href="https://github.com/fytroy/starfield" target="_blank" class="btn-link">View Code</a>
-                    </div>
-                </div>
-                <!-- 13. Realtime Chat -->
-                <div class="project-card glass">
-                    <div class="project-content">
-                        <div class="project-header">
-                            <h3>Live Chat</h3>
-                            <span class="project-type">Web Sockets</span>
-                        </div>
-                        <p class="project-desc">Low-latency messaging platform with rooms.</p>
-                        <div class="tech-stack"><span>Socket.io</span><span>Express</span><span>MongoDB</span></div>
-                        <a href="https://github.com/fytroy/realtimechat.app" target="_blank" class="btn-link">View
-                            Code</a>
-                    </div>
-                </div>
-                <!-- 14. Snake Game -->
-                <div class="project-card glass">
                     <div class="project-content">
                         <div class="project-header">
                             <h3>Snake Game</h3>
-                            <span class="project-type">Game Dev</span>
+                            <span class="project-type">Java / Game</span>
                         </div>
-                        <p class="project-desc">Classic snake game implementation with score tracking.</p>
-                        <div class="tech-stack"><span>JavaScript</span><span>HTML5</span><span>CSS3</span></div>
+                        <p class="project-desc">Classic snake game implementation with score tracking and collision
+                            detection.</p>
+                        <div class="tech-stack"><span>Java</span><span>Swing</span><span>OOP</span></div>
                         <a href="https://github.com/fytroy/snake.game" target="_blank" class="btn-link">View Code</a>
-                    </div>
-                </div>
-                <!-- 15. Repo Cloner -->
-                <div class="project-card glass">
-                    <div class="project-content">
-                        <div class="project-header">
-                            <h3>Repo Cloner</h3>
-                            <span class="project-type">Automation</span>
-                        </div>
-                        <p class="project-desc">Bulk GitHub repository cloning utility.</p>
-                        <div class="tech-stack"><span>Python</span><span>Git</span><span>API</span></div>
-                        <a href="https://github.com/fytroy/RepoCloner.py" target="_blank" class="btn-link">View Code</a>
                     </div>
                 </div>
             </div>
@@ -614,11 +545,22 @@
                     <div class="contact-details">
                         <div class="detail-item">
                             <i class="fas fa-envelope"></i>
-                            <span>your.email@example.com</span>
+                            <span>rodneyroygitonga@gmail.com</span>
                         </div>
                         <div class="detail-item">
                             <i class="fas fa-map-marker-alt"></i>
-                            <span>Remote / Worldwide</span>
+                            <span>Nairobi, Kenya / Remote</span>
+                        </div>
+
+                        <div class="contact-socials">
+                            <a href="https://github.com/fytroy" target="_blank" aria-label="GitHub"><i
+                                    class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/rodney-gitonga-306460183" target="_blank"
+                                aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            <a href="mailto:rodneyroygitonga@gmail.com" aria-label="Email"><i
+                                    class="fas fa-envelope"></i></a>
+                            <a href="https://dev.to/rodney_gitonga_02405fa004" target="_blank" aria-label="Dev.to"><i
+                                    class="fab fa-dev"></i></a>
                         </div>
                     </div>
                 </div>
